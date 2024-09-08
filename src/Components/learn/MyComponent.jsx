@@ -1,12 +1,12 @@
-import { ThirdComponent } from "./SecondComponent";
+import './styles.css'
 
 const MyComponent = () => {
     return (
         <>
-            <div>
-                Nguyen Viet Anh - birthday: 24 /04/2004 <br />
-                <ThirdComponent />
+            <div className="one">
+                Nguyen Viet Anh
             </div>
+            <div style={{ fontStyle: 'italic' }}>birthday: 24 /04/2004</div>
         </>
     );
 }
