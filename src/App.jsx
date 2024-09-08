@@ -3,7 +3,7 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import MyComponent from './Components/learn/MyComponent'
-import { SecondComponent } from './Components/learn/SecondComponent'
+import { SecondComponent, ThirdComponent } from './Components/learn/SecondComponent'
 
 
 
@@ -22,6 +22,7 @@ const App = () => {
       </div>
       <h1>Vite + React</h1>
       <MyComponent />
+      <ThirdComponent />
       <SecondComponent />
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>

@@ -1,12 +1,20 @@
 import './styles.css'
 
 const MyComponent = () => {
+    const arrays = {
+        name: "Nguyen Viet Anh",
+        birthday: {
+            day: 24,
+            moth: 4,
+            year: 2004,
+        },
+    };
     return (
         <>
             <div className="one">
-                Nguyen Viet Anh
+                {JSON.stringify(arrays.name)}
             </div>
-            <div style={{ fontStyle: 'italic' }}>birthday: 24 /04/2004</div>
+            <div style={{ fontStyle: 'italic' }}>birthday: {arrays.birthday.day}</div>
         </>
     );
 }
