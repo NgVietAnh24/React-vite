@@ -5,12 +5,12 @@ const TodoNew = (props) => {
 
     const [valueInput, setValueInput] = useState("anh");
 
-    console.log(">>>>> Check props todoNew: ", props);
+    // console.log(">>>>> Check props todoNew: ", props);
     const { addNewData } = props;
     // addNewData("Viet Anh")
     const handleClick = () => {
         // alert(">>>>> Click me 🔥🔥🔥");
-        console.log(">>>>> Check Valueinput: ", valueInput)
+        addNewData(valueInput);
     }
     const handleOnChange = (name) => {
         // console.log(">>>>> handleOnChange 🔥🔥🔥", name);
